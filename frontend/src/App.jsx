@@ -108,10 +108,10 @@ const handleExport = () => {
             <option value="rejected">已拒绝</option>
             <option value="withdrawn">已撤回</option>
           </Form.Select>
-          <Button variant="outline-success" className="me-2" onClick={handleExport}>
+          <Button className="me-2" onClick={handleAddClick}>+ 新增</Button>
+          <Button variant="outline-success" onClick={handleExport}>
           导出Excel
           </Button>
-          <Button onClick={handleAddClick}>+ 新增</Button>
         </Col>
       </Row>
 
