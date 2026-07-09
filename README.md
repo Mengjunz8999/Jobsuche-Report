@@ -81,7 +81,7 @@ npm install react-bootstrap bootstrap
 npm run dev
 ```
 
-前端默认跑在 `http://localhost:5173`（Vite 默认端口）。因为后端 CORS 配置里写死了 `http://localhost:3000`，如果 Vite 用的是 5173 端口，记得同步改一下 `backend/app/__init__.py` 里 `CORS` 那一行的 origin。
+前端默认跑在 `http://localhost:5173`（Vite 默认端口）。
 
 ## 四、功能说明
 
