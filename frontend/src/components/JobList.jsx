@@ -39,7 +39,7 @@ function JobList({ jobs, onEdit, onDelete }) {
       </thead>
       <tbody>
         {jobs.map((job, index) => (
-          <tr key={job.id}>
+          <tr key={job.id} onClick={() => onEdit(job)} style={{ cursor: "pointer" }}>
             <td>{index + 1}</td>
             <td>{job.company_name}</td>
             <td>{job.position_title}</td>
@@ -52,7 +52,7 @@ function JobList({ jobs, onEdit, onDelete }) {
             <td>{job.application_date || "-"}</td>
             <td>{job.location || "-"}</td>
             <td>{job.source || "-"}</td>
-            <td>
+            <td onClick={(e) => e.stopPropagation()}>
               <Button size="sm" variant="outline-primary" className="me-2" onClick={() => onEdit(job)}>
                 编辑
               </Button>
