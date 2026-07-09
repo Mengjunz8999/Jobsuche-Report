@@ -12,7 +12,7 @@ const EMPTY_JOB = {
   job_url: "",
   location: "",
   status: "applied",
-  employment_type: "",
+  employment_type: "Praktikum",
   application_date: "",
   source: "",
   contact_person: "",
@@ -71,7 +71,7 @@ function JobForm({ show, onClose, onSave, editingJob }) {
           <Row className="mb-3">
             <Form.Group as={Col}>
               <Form.Label>雇佣类型</Form.Label>
-              <Form.Select name="employment_type" value={formData.employment_type || ""} onChange={handleChange}>
+              <Form.Select name="employment_type" value={formData.employment_type} onChange={handleChange}>
                 <option value="Praktikum">Praktikum</option>
                 <option value="Teilzeit">Teilzeit</option>
                 <option value="Vollzeit">Vollzeit</option>
