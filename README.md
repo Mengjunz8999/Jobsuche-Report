@@ -25,13 +25,15 @@ job-tracker/
         │   └── api.js          # 封装对后端 API 的请求
         ├── App.jsx
         └── main.jsx
+    └── web-screenshots/
+        ├── Home.png
+
 ```
 
 ## 一、搭建 MySQL 数据库
 
 1. 确保本地已安装并启动 MySQL。
 2. 到你的数据库里，运行把schema.sql的SQL 语句以建好你的数据库。
-  
 
 ## 二、启动后端 (Flask)
 
@@ -88,9 +90,12 @@ npm run dev
 - 增/删/改/查求职记录（公司、职位、状态、申请日期、渠道、联系人、备注等字段）
 - 按状态筛选（已投递 / 面试中 / 已录用 / 已拒绝 / 已撤回）
 
+## 五、web页面
+
+![Home page] (frontend/web-screenshots/Home.png )
+
 ## 后续可扩展方向
 
 - 跟进提醒（根据 `follow_up_date` 做到期提醒）
 - 数据可视化仪表盘（各状态数量统计、按渠道来源分析）
-- 导出 Excel/CSV
 - 之后按你的计划迁移到 Docker（写 `docker-compose.yml`，包含 mysql + backend + frontend 三个服务）
