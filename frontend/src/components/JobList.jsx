@@ -23,7 +23,7 @@ function JobList({ jobs, onEdit, onDelete }) {
   }
 
   return (
-    <Table striped bordered hover responsive>
+    <Table striped bordered hover responsive className="jobs_table">
       <thead>
         <tr>
           <th>#</th>

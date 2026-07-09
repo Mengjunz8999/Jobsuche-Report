@@ -10,6 +10,7 @@ import * as XLSX from "xlsx";
 import JobList from "./components/JobList";
 import JobForm from "./components/JobForm";
 import { fetchJobs, createJob, updateJob, deleteJob } from "./services/api";
+import "./app.css";
 
 function App() {
   const [jobs, setJobs] = useState([]);
